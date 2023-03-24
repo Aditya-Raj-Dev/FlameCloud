@@ -6,7 +6,7 @@ const Feedback = () => {
     let data=[1,2,3]
     let star=[1,2,3,4,5]
   return (
-    <Box width="80%" margin="auto" mt="5rem">
+    <Box width="70%" margin="auto" mt="5rem">
        <Heading as='h2' size='xl'>
        Customers <span style={{color:"rgba(22, 209, 19, 1)"}}>Love</span> our Proxies
         </Heading>
@@ -26,7 +26,7 @@ const Feedback = () => {
                <Flex mb="10px">{star.map((item)=>(
                 <img src={Starg} alt="" />
                )) }</Flex>
-               <p>“Integer facilisis metus magna, non eleifend est ultricies sit amet. Aliquam vehicula, orci non hendrerit pretium, nibh ante auctor velit, quis convallis tor et tellus.”</p>
+               <p>“Integer facilisis metus magna, non eleifend est ultricies sit amet. Aliquam vehicula, orci non hendrerit pretium.”</p>
            <Flex gap="20px" mt="10px" alignItems="center">
             <img src={Elipse} alt="" style={{width:"30px",height:"30px"}}/>
             <Box>
