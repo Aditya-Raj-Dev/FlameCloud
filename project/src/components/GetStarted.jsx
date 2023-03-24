@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Text, Box, Button } from "@chakra-ui/react";
+import { Flex, Text, Box, Button,Grid } from "@chakra-ui/react";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import Shape from "../images/Shape.png";
 import Vector from "../images/Vector.png";
@@ -104,7 +104,8 @@ const GetStarted = () => {
         }}
       ></div>
       <br />
-   <Flex
+   <Grid
+    templateColumns={[ "repeat(1,1fr)","repeat(1,1fr)","repeat(2,1fr)","repeat(2,1fr)","repeat(4,1fr)"]}
  justifyContent="center"
    gap="10px">
      {
@@ -130,7 +131,7 @@ const GetStarted = () => {
             </Flex>
         ))
      }
-   </Flex>
+   </Grid>
     </Box>
   );
 };
