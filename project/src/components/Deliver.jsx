@@ -14,14 +14,16 @@ const Deliver = () => {
   </Heading>
   <br /><br />
   <Box 
-  width={["100%","100%","100%","75%"]} margin="auto">
+  width={["100%","100%","100%","75%"]} margin="auto" >
     <Grid   
     gap="2rem"
-    textAlign="left"
+    textAlign="left"  
     templateColumns={["repeat(1,1fr)","repeat(1,1fr)","repeat(2,1fr)"]}
     >
+   
         <Box p="25px" borderRadius="10px"
         maxWidth="450px"
+        height="fit-content"
         border="0.5px solid rgba(30, 30, 30, 0.1)" bg="rgba(30, 30, 30, 0.01)">
            <Flex justifyContent="space-between">
               <Box>
@@ -86,7 +88,7 @@ const Deliver = () => {
           </Button>
         </Box>
 
-        <Box p="25px" maxWidth="450px" borderRadius="10px" border="1px solid rgba(217, 216, 214, 1)">
+        <Box p="25px" maxWidth="450px" borderRadius="10px" bg="rgba(22, 209, 19, 0.1)" border="1px solid rgba(217, 216, 214, 1)">
            <Flex justifyContent="space-between"  >
               <Box >
                      <Box bg="rgba(37, 205, 8, 1)" p="10px" borderRadius="10px"
@@ -163,6 +165,8 @@ const Deliver = () => {
         </Box>
     </Grid>
     </Box>
+    <br />
+ 
     </Box>
   )
 }
