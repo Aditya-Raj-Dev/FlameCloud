@@ -1,7 +1,9 @@
 import React from "react";
 import { Flex, Text, Box, Button } from "@chakra-ui/react";
 import { ChevronDownIcon, HamburgerIcon } from "@chakra-ui/icons";
+import { useNavigate } from "react-router-dom";
 const Navbar = () => {
+  const navigate=useNavigate()
   return (
     <Box w={["90%","90%","90%","80%"]} margin="auto" fontSize={["14px", "14px", "15px", "17px"]}>
       <Flex alignItems="center" marginTop="10px" justifyContent="space-between">
@@ -82,7 +84,7 @@ const Navbar = () => {
         </Flex>
         <Flex alignItems="center" gap="5px">
           <Button colorScheme="messenger"
-          
+           onClick={()=>navigate("/locationcheck")}
            fontSize= {["sm","sm","sm",'xl']}
           >Get Started</Button>
           <Box

@@ -7,7 +7,9 @@ import square from "../images/square.jpg"
 import dollor from "../images/dollor.png"
 import lock from "../images/lock.png"
 import key from "../images/key.png"
+import { useNavigate } from "react-router-dom";
 const GetStarted = () => {
+  const navigate=useNavigate()
     let star=[1,2,3,4,5]
     let topbox=[
         {"text":"Lorem Ipsum Dolor Sit Amet Top",
@@ -19,6 +21,8 @@ const GetStarted = () => {
           {"text":"Lorem Ipsum Dolor Sit Amet Top",
           "img":key}
     ]
+
+    
   return (
     <Box w={["90%", "90%", "90%", "80%"]} margin="auto" mt="50px">
       <center>
@@ -31,7 +35,6 @@ const GetStarted = () => {
         <Text
           fontSize={["25px", "28px", "35px", "45px"]}
           fontWeight="semibold"
-          lineHeight="50px"
           marginBottom="20px"
         >
           We are the <span style={{ color: "#077BFF" }}>Fastest</span> and the{" "}
@@ -55,6 +58,7 @@ const GetStarted = () => {
         color="white"
         borderBottom="4px solid #0566D4"
         fontSize="lg"
+        onClick={()=>navigate("/locationcheck")}
       >
         Get Started
       </Button>
