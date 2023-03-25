@@ -45,7 +45,7 @@ const Footer = () => {
           </Button>
         </Flex >
 
-        <Flex  gap={["3rem","3rem","7rem","5rem"]}
+        <Flex  gap={["1rem","3rem","7rem","5rem"]}
    
         justifyContent="space-between"
    >

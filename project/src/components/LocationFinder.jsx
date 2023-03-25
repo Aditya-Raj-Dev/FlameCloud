@@ -15,21 +15,21 @@ import {ArrowForwardIcon} from "@chakra-ui/icons"
 
 const LocationFinder = () => {
   return (
-    <Box width={["80%", "50%", "50%", "30%"]} margin="auto" mt="4rem">
-      <Text fontSize={["xs", "xs", "sm", "sm"]} color="grey">
+    <Box width={["90%", "80%", "70%", "50%"]} margin="auto" mt="4rem">
+      <Text fontSize={["xs", "xs", "sm", "sm"]} color="grey" mb="-5px">
         PROXY LOCATION CHECKER
       </Text>
-      <Heading
-        as="h2"
-        size={["lg", "lg", "xl", "xl"]}
+      <Text
+        fontSize={["28px", "40px", "48px", "56px"]}
         margin="auto"
         fontWeight="semibold"
+        lineHeight="120%"
       >
-        Check Locations of all your Proxies{" "}
+        Check Locations of all your Proxies
         <span style={{ color: "rgba(7, 123, 255, 1)" }}>Free</span> of Cost
-      </Heading>
-      <Text  fontSize={["xs","xs","md","md"]}
-       width={["90%", "90%", "80%", "80%"]} margin="auto">
+      </Text>
+      <Text  fontSize={["16px","22px"]}
+       width={["90%", "90%", "80%", "70%"]} margin="auto" opacity="50%">
         To Check location, enter the address or proxies you want to check (1 IP
         Per line)
       </Text>
@@ -47,25 +47,31 @@ const LocationFinder = () => {
         <Text>1.1.1.1</Text>
         <Text>192.168.1.1</Text>
       </Box>
-      <Button   
-        colorScheme="messenger" position="left" width="46%" display="block">
-        Check Location
-      </Button>
-      <br />
-      <Text color="grey" textAlign="left" display="block" width='100%' fontSize="14px">
-        By using our tool, you agree our <span
-        style={{textDecoration:"underline"}}>Terms of Service</span> and{" "}
-        <span style={{textDecoration:"underline"}}>Privacy Policy</span>
-      </Text>
-       <Text color="rgba(7, 123, 255, 1)" mt="5px"
+      <Box
+       display={["flex"]}
+       justifyContent="space-between"
+       flexDirection={["column","column","row","row"]}>
+          <Button   
+            colorScheme="messenger" position="left" width={["44%","35%","30%","26%"]}
+             display="block" >
+            Check Location
+          </Button>
+        
+          <Text color="grey" textAlign="left" display="block" width={["100%","50%","50%"]}  fontSize="14px">
+            By using our tool, you agree our <span
+            style={{textDecoration:"underline"}}>Terms of Service</span> and{" "}
+            <span style={{textDecoration:"underline"}}>Privacy Policy</span>
+          </Text>
+      </Box>
+       <Text color="rgba(7, 123, 255, 1)" mt="41px"
        fontWeight="bold" textAlign="left" mb="15px">Your Results</Text>
        
        <TableContainer  fontSize={["10px","10px","12px","13px"]}
           gap="10px"
        border="1px solid rgba(0, 0, 0, 0.25)" borderRadius="6px"> 
-  <Table variant='unstyled' overflowX={{ base: "hidden", lg: "unset"}}>
+  <Table variant='unstyled' overflowX={{ base: "hidden", lg: "unset"}} fontSize={["10px","10px","12px","13px"]}>
     <Thead>
-      <Tr bg="rgba(0, 0, 0, 0.1)" >
+      <Tr bg="rgba(0, 0, 0, 0.1)"  >
         <Th>IP</Th> 
         <Th>PROXY</Th>
         <Th >CITY</Th>

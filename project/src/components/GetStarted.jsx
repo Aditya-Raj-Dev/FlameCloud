@@ -50,7 +50,7 @@ const GetStarted = () => {
         color="#111822"
         opacity= "50%"
         fontWeight="500"
-        w={["98%", "90%", "80%", "40%"]}
+        w={["98%", "90%", "80%", "45%"]}
         m="auto"
         fontSize={["18px","20px","22px"]}
         marginBottom="10px"

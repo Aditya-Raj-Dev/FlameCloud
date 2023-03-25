@@ -5,14 +5,15 @@ import { Box, Button, Flex, Grid, Heading, Text } from '@chakra-ui/react'
 
 const Deliver = () => {
   return (
-    <Box     width={["90%","90%","90%","60%" ]}margin="auto" mt="8rem">
+    <Box     width={["90%","90%","90%","60%" ]}margin="auto" mt="177px">
         <Heading as='h2' size='xl'>
         You choose, we <span style={{color:"rgba(7, 123, 255, 1)"}}>Deliver!</span>
         </Heading>
-        <Heading as='h6' size='sm' fontWeight="300" width={["80%","80%","60%","45%"]} margin="auto">
+        <Text  opacity="50%" 
+        width={["80%","80%","60%","55%"]} 
+        margin="auto" mt="10px" mb="92px"  fontWeight="semibold" fontSize="18px">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue sit amet mollis molestie.
-  </Heading>
-  <br /><br />
+  </Text>
   <Box 
   width={["100%","100%","100%","75%"]} margin="auto" >
     <Grid   
@@ -28,12 +29,12 @@ const Deliver = () => {
            <Flex justifyContent="space-between">
               <Box>
                      <Box bg="rgba(46, 115, 232, 1)" p="10px" borderRadius="10px"
-                     height="40px" width="40px" color="white">
+                     height="40px" width="40px" color="white" mb="8px">
                         v4  
                      </Box>
-                     <Heading as='h6' size='sm'>
+                     <Text fontSize="20px" fontWeight="600" mb="8px">
                      IPv4 Proxies
-                     </Heading>
+                     </Text>
                      <p style={{color:"gray"}}>Static/Rotating</p>
               </Box>
               <Box color="gray" textAlign="left">
@@ -53,10 +54,10 @@ const Deliver = () => {
               </Box>
            </Flex>
            <br />
-           <Box width="100%" margin="auto" border="1px solid rgba(30, 30, 30, 0.1)"></Box>
+           <Box width="100%" margin="auto"  border="1px solid rgba(30, 30, 30, 0.1)"></Box>
          <br />
-         <p style={{color:"gray",fontSize:"18px"}}>Plan Includes :</p>
-          <Box >
+         <p style={{color:"gray",fontSize:"16px"}}>Plan Includes :</p>
+          <Box  fontSize="16px">
             <Flex alignItems="center" gap="10px">     
               <CheckIcon color="rgba(7, 123, 255, 1)"/>
               <Text>100 Threads</Text>
@@ -82,7 +83,7 @@ const Deliver = () => {
           </Box>
           <br />
           <Button colorScheme="twitter" width="100%"
-          fontSize="20px"
+          fontSize="18px"
           borderBottom="5px solid #0566D4" rightIcon={<ArrowForwardIcon/>}>
             View Pricing
           </Button>
@@ -92,12 +93,12 @@ const Deliver = () => {
            <Flex justifyContent="space-between"  >
               <Box >
                      <Box bg="rgba(37, 205, 8, 1)" p="10px" borderRadius="10px"
-                     height="40px" width="40px" color="white">
+                     height="40px" width="40px" color="white" mb="8px">
                         v6
                      </Box>
-                     <Heading as='h6' size='sm'>
+                     <Text fontSize="20px" fontWeight="600" mb="8px">
                      IPv4 Proxies
-                     </Heading>
+                     </Text>
                      <p style={{color:"gray"}}>Static/Rotating</p>
               </Box>
               <Box color="gray" textAlign="left">
@@ -117,10 +118,10 @@ const Deliver = () => {
               </Box>
            </Flex>
            <br />
-           <Box width="100%" margin="auto" border="1px solid rgba(30, 30, 30, 0.1)"></Box>
+           <Box width="100%" margin="auto" fontSize="16px" border="1px solid rgba(30, 30, 30, 0.1)"></Box>
           <br />
-           <p style={{color:"gray",fontSize:"18px"}}>Plan Includes :</p>
-          <Box >
+           <p style={{color:"gray"}}>Plan Includes :</p>
+          <Box fontSize="16px">
             <Flex alignItems="center" gap="10px">     
               <CheckIcon color="rgba(7, 123, 255, 1)"/>
               <Text>100 Threads</Text>
@@ -158,7 +159,7 @@ const Deliver = () => {
           </Box>
           <br />
           <Button bg="#16D113" width="100%"
-          fontSize="20px" color="white"
+          fontSize="18px" color="white"
           borderBottom="5px solid #0EB726" rightIcon={<ArrowForwardIcon/>}>
             View Pricing
           </Button>
