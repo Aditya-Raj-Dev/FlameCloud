@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const Navbar = () => {
   const navigate=useNavigate()
   return (
-    <Box w={["90%","90%","90%","80%"]} margin="auto" fontSize={["14px", "14px", "15px", "17px"]}>
+    <Box w={["90%","90%","90%","80%"]} margin="auto" fontSize={[ "16px"]}>
       <Flex alignItems="center" marginTop="10px" justifyContent="space-between">
         <Flex alignItems="center">
           <svg
@@ -44,7 +44,11 @@ const Navbar = () => {
           </p>
           <p>FAQS</p>
           <p>Blogs</p>
-          <Flex alignItems="center" gap="2px">
+          
+         
+        </Flex>
+        <Flex alignItems="center" gap="2px"
+         display={["none", "none", "none","none", "none","flex"]}>
             <svg
               width="16"
               height="12"
@@ -81,12 +85,13 @@ const Navbar = () => {
             ></div>
             <p>Log in</p>
           </Flex>
-        </Flex>
         <Flex alignItems="center" gap="5px">
           <Button colorScheme="messenger"
            onClick={()=>navigate("/locationcheck")}
-           fontSize= {["sm","sm","sm",'xl']}
+           fontSize= {['16px']}
+           width={["auto","127px"]}
           >Get Started</Button>
+          
           <Box
             display={["block", "block", "block","block", "block", "none"]}
             paddingTop="3px"
@@ -95,6 +100,7 @@ const Navbar = () => {
             bg="rgba(7, 123, 255, 0.25)"
           >
             <HamburgerIcon color="#077BFF" />
+           
           </Box>
         </Flex>
       </Flex>

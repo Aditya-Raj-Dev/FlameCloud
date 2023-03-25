@@ -24,18 +24,22 @@ const GetStarted = () => {
 
     
   return (
-    <Box w={["90%", "90%", "90%", "80%"]} margin="auto" mt="50px">
+    <Box w={["93%", "93%", "93%", "80%"]} margin="auto" mt="50px">
       <center>
-        <Text color="grey" fontSize={["sm", "md", "md", "xl"]}>
+        <Text color="#111822" opacity="50%" fontWeight="600"
+        lineHeight="19.2px"
+        fontSize={["14px","16px"]}
+        fontStyle="semibold">
           WELCOME TO CREATIVE PROXIES
         </Text>
       </center>
 
-      <Box margin="auto" w={["90%", "90%", "80%", "60%"]}>
+      <Box margin="auto" w={["95%", "90%", "85%", "80%"]}>
         <Text
-          fontSize={["25px", "28px", "35px", "45px"]}
+          fontSize={["30px", "30px", "45px", "56px"]}
           fontWeight="semibold"
           marginBottom="20px"
+          lineHeight={["30px","40px","50px","67px"]}
         >
           We are the <span style={{ color: "#077BFF" }}>Fastest</span> and the{" "}
           <span style={{ color: "#16D113" }}>Most Reliable</span> Proxy Service
@@ -43,10 +47,12 @@ const GetStarted = () => {
         </Text>
       </Box>
       <Text
-        color="grey"
-        w={["90%", "90%", "80%", "40%"]}
+        color="#111822"
+        opacity= "50%"
+        fontWeight="500"
+        w={["98%", "90%", "80%", "40%"]}
         m="auto"
-        fontSize={["sm", "md", "md", "xl"]}
+        fontSize={["18px","20px","22px"]}
         marginBottom="10px"
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus augue
@@ -57,7 +63,7 @@ const GetStarted = () => {
         backgroundColor="#077BFF"
         color="white"
         borderBottom="4px solid #0566D4"
-        fontSize="lg"
+        fontSize="18px"
         onClick={()=>navigate("/locationcheck")}
       >
         Get Started
@@ -131,7 +137,8 @@ const GetStarted = () => {
                 bg={i===0?"#3BC9FB":i===1?"#72E6E5":i===2?"#80FC6A":"#2E73E8"}>
                 <img src={item.img} alt="" width="15px" />
                 </Box>
-                <Text width="60%" lineHeight="18px">{item.text}</Text>
+                <Text width="60%" fontStyle="Regular"
+                lineHeight="21.6px" fontSize="16px">{item.text}</Text>
             </Flex>
         ))
      }
