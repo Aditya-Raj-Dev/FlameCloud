@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const Navbar = () => {
   const navigate=useNavigate()
   return (
-    <Box w={["90%","90%","90%","80%"]} margin="auto" fontSize={[ "16px"]}>
+    <Box w={["90%","90%","90%","80%"]} margin="auto" >
       <Flex alignItems="center" marginTop="10px" justifyContent="space-between">
         <Flex alignItems="center">
           <svg
@@ -30,11 +30,11 @@ const Navbar = () => {
           </Text>
         </Flex>
         <Flex
-          display={["none", "none", "none","none", "flex","flex"]}
-          gap="2rem"
-          ml="3rem"
-          mr="7rem"
-          fontSize={["none", "none", "none","none", "12px","16px"]}
+          display={["none", "none","none", "flex","flex"]}
+          gap={["none", "none","none","10px","2rem"]}
+          ml={["none", "none","none","1rem","3rem"]}
+          mr={["none", "none","none","1rem","7rem"]}
+          fontSize={["none", "none","none", "12px","12px","16px"]}
         >
           <p>Pricing</p>
           <p>
@@ -49,8 +49,8 @@ const Navbar = () => {
          
         </Flex>
         <Flex alignItems="center" gap="2px"
-        fontSize={["none", "none", "none","none", "12px","16px"]}
-         display={["none", "none", "none","none", "flex","flex"]}>
+        fontSize={[ "none", "none","none", "12px","12px","16px"]}
+         display={["none", "none","none", "flex","flex"]}>
             <svg
               width="16"
               height="12"
@@ -95,7 +95,7 @@ const Navbar = () => {
           >Get Started</Button>
           
           <Box
-            display={["block", "block", "block","block", "none", "none"]}
+            display={[ "block", "block","block", "none", "none"]}
             paddingTop="3px"
             height="37px"
             width="37px"
