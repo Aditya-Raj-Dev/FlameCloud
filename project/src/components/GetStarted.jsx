@@ -3,7 +3,7 @@ import { Flex, Text, Box, Button,Grid } from "@chakra-ui/react";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import Shape from "../images/Shape.png";
 import Vector from "../images/Vector.png";
-import square from "../images/square.jpg"
+import square from "../images/square.png"
 import dollor from "../images/dollor.png"
 import lock from "../images/lock.png"
 import key from "../images/key.png"
@@ -115,30 +115,33 @@ const GetStarted = () => {
       ></div>
       <br />
    <Grid
-    templateColumns={[ "repeat(1,1fr)","repeat(1,1fr)","repeat(2,1fr)","repeat(2,1fr)","repeat(4,1fr)"]}
+    templateColumns={[ "repeat(2,1fr)","repeat(2,1fr)","repeat(2,1fr)","repeat(4,1fr)","repeat(4,1fr)"]}
  justifyContent="center"
    gap="10px">
      {
         topbox.map((item,i)=>(
             <Flex
-            gap="20px"
+            gap={{ base: '10px', md: '20px', lg: '20px' }}
+            padding={{base:"14px 10px 15px 10px",
+            md:"24px 46px 26px 10px",lg:"24px 46px 26px 24px" }}
             borderRadius="5px"
             textAlign="left"
+            border="1px solid #CEDAC2"
             justifyContent="center"
             alignItems="center"
-          bg="#D4EAE8"
-          padding="10px 0px 10px 0px"
+            bg="#EFFAF6"
             >
                 <Box
-                p="7px 7px 7px 7px"
+                p="10px"
                 borderRadius="5px"
                 alignItems="center"
-                
                 bg={i===0?"#3BC9FB":i===1?"#72E6E5":i===2?"#80FC6A":"#2E73E8"}>
                 <img src={item.img} alt="" width="15px" />
                 </Box>
-                <Text width="60%" fontStyle="Regular"
-                lineHeight="21.6px" fontSize="16px">{item.text}</Text>
+                <Text  fontStyle="Regular"
+                lineHeight="21.6px" fontSize={{ base: '13px', md: '16px', lg: '16px' }}
+                
+                >{item.text}</Text>
             </Flex>
         ))
      }
